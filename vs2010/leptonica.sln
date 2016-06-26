@@ -1,0 +1,44 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ALL_BUILD", "ALL_BUILD.vcxproj", "{A46CC7C6-E72F-4843-B605-17E21AD32705}"
+	ProjectSection(ProjectDependencies) = postProject
+		{3A5BB123-18D7-49AB-82EB-476BE1B5EE37} = {3A5BB123-18D7-49AB-82EB-476BE1B5EE37}
+		{3B3E90DF-95B8-4AD2-9177-F12AAEF30C32} = {3B3E90DF-95B8-4AD2-9177-F12AAEF30C32}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ZERO_CHECK", "ZERO_CHECK.vcxproj", "{3A5BB123-18D7-49AB-82EB-476BE1B5EE37}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "leptonica", "src\leptonica.vcxproj", "{3B3E90DF-95B8-4AD2-9177-F12AAEF30C32}"
+	ProjectSection(ProjectDependencies) = postProject
+		{3A5BB123-18D7-49AB-82EB-476BE1B5EE37} = {3A5BB123-18D7-49AB-82EB-476BE1B5EE37}
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CMake Targets", "CMake Targets", "{3B1C21E9-79E5-43E9-BA4F-381780D0162F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A46CC7C6-E72F-4843-B605-17E21AD32705}.Debug|x64.ActiveCfg = Debug|x64
+		{A46CC7C6-E72F-4843-B605-17E21AD32705}.Release|x64.ActiveCfg = Release|x64
+		{3A5BB123-18D7-49AB-82EB-476BE1B5EE37}.Debug|x64.ActiveCfg = Debug|x64
+		{3A5BB123-18D7-49AB-82EB-476BE1B5EE37}.Debug|x64.Build.0 = Debug|x64
+		{3A5BB123-18D7-49AB-82EB-476BE1B5EE37}.Release|x64.ActiveCfg = Release|x64
+		{3A5BB123-18D7-49AB-82EB-476BE1B5EE37}.Release|x64.Build.0 = Release|x64
+		{3B3E90DF-95B8-4AD2-9177-F12AAEF30C32}.Debug|x64.ActiveCfg = Debug|x64
+		{3B3E90DF-95B8-4AD2-9177-F12AAEF30C32}.Debug|x64.Build.0 = Debug|x64
+		{3B3E90DF-95B8-4AD2-9177-F12AAEF30C32}.Release|x64.ActiveCfg = Release|x64
+		{3B3E90DF-95B8-4AD2-9177-F12AAEF30C32}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{3A5BB123-18D7-49AB-82EB-476BE1B5EE37} = {3B1C21E9-79E5-43E9-BA4F-381780D0162F}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

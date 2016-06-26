@@ -156,34 +156,6 @@ copy $(ProjectDir)\..\..\src\*.h $(SolutionDir)\sdk-$(SolutionName)\$(Platform)\
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <CustomBuild Include="..\..\src\CMakeLists.txt">
-      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/dev/ocr/leptonica/src/CMakeLists.txt</Message>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
-"C:\Program Files (x86)\CMake\bin\cmake.exe" -HD:/dev/ocr/leptonica -BD:/dev/ocr/leptonica/vs2010 --check-stamp-file D:\dev\ocr\leptonica\vs2010\src\CMakeFiles\generate.stamp
-if %errorlevel% neq 0 goto :cmEnd
-:cmEnd
-endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
-:cmErrorLevel
-exit /b %1
-:cmDone
-if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/dev/ocr/leptonica/src/CMakeLists.txt;D:\dev\ocr\leptonica\src\CMakeLists.txt;D:\dev\ocr\leptonica\src\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\dev\ocr\leptonica\vs2010\src\CMakeFiles\generate.stamp</Outputs>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/dev/ocr/leptonica/src/CMakeLists.txt</Message>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
-"C:\Program Files (x86)\CMake\bin\cmake.exe" -HD:/dev/ocr/leptonica -BD:/dev/ocr/leptonica/vs2010 --check-stamp-file D:\dev\ocr\leptonica\vs2010\src\CMakeFiles\generate.stamp
-if %errorlevel% neq 0 goto :cmEnd
-:cmEnd
-endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
-:cmErrorLevel
-exit /b %1
-:cmDone
-if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/dev/ocr/leptonica/src/CMakeLists.txt;D:\dev\ocr\leptonica\src\CMakeLists.txt;D:\dev\ocr\leptonica\src\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\dev\ocr\leptonica\vs2010\src\CMakeFiles\generate.stamp</Outputs>
-    </CustomBuild>
-  </ItemGroup>
-  <ItemGroup>
     <ClInclude Include="..\..\src\allheaders.h" />
     <ClInclude Include="..\..\src\alltypes.h" />
     <ClInclude Include="..\..\src\array.h" />
@@ -910,11 +882,6 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsCpp</CompileAs>
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsCpp</CompileAs>
     </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="D:/dev/ocr/leptonica/vs2010/ZERO_CHECK.vcxproj">
-      <Project>3A5BB123-18D7-49AB-82EB-476BE1B5EE37</Project>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
